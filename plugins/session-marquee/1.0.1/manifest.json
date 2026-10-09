@@ -1,0 +1,7 @@
+{
+  "id": "session-marquee",
+  "name": "会话跑马灯",
+  "version": "1.0.1",
+  "tier": "declarative",
+  "permissions": []
+}

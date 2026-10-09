@@ -1,4 +1,12 @@
 {
   "schemaVersion": 1,
-  "plugins": []
+  "plugins": [
+    {
+      "id": "session-marquee",
+      "name": "会话跑马灯",
+      "description": "为正在运行的会话，在编辑区、浏览器标签和当前选中的侧边栏会话显示渐变流动边框。",
+      "version": "1.0.1",
+      "minCodegVersion": "0.32.2"
+    }
+  ]
 }

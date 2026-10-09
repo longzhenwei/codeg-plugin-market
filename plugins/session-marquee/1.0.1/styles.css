@@ -1,0 +1,42 @@
+:root {
+  --session-marquee-a: #ff6b6b;
+  --session-marquee-b: #ffd166;
+  --session-marquee-c: #36cfc9;
+}
+
+.codeg-composer-chrome:has(button[data-variant="destructive"])::before,
+.browser-tab-item:has(.bg-yellow-400) [role="tab"]::after,
+[data-conv-key]
+  > .group[class*="bg-sidebar-primary/8"]:has(.bg-yellow-400)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--codeg-flow-angle, 0deg),
+    var(--session-marquee-a),
+    var(--session-marquee-b),
+    var(--session-marquee-c),
+    var(--session-marquee-a)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: codeg-composer-flow 2.5s linear infinite;
+}
+
+.codeg-composer-chrome:has(button[data-variant="destructive"])::before {
+  display: block;
+}
+
+.browser-tab-item:has(.bg-yellow-400) [role="tab"]::after {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
