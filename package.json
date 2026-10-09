@@ -1,0 +1,13 @@
+{
+  "name": "codeg-plugin-market",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test scripts/market.test.mjs",
+    "check": "node scripts/market.mjs check",
+    "build": "node scripts/market.mjs build"
+  }
+}
